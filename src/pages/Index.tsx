@@ -92,7 +92,6 @@ const Index = () => {
           </div>
           <nav className="hidden md:flex gap-6">
             <a href="#services" className="hover:text-accent transition-colors">Услуги</a>
-            <a href="#consultation" className="hover:text-accent transition-colors">Консультация</a>
             <a href="#properties" className="hover:text-accent transition-colors">Объекты</a>
             <a href="#contacts" className="hover:text-accent transition-colors">Контакты</a>
           </nav>
@@ -112,10 +111,10 @@ const Index = () => {
           <Button 
             size="lg" 
             className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6"
-            onClick={() => document.getElementById('consultation')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}
           >
             <Icon name="Phone" size={20} className="mr-2" />
-            Получить консультацию
+            Связаться с нами
           </Button>
         </div>
       </section>
@@ -147,58 +146,6 @@ const Index = () => {
               </Card>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section id="consultation" className="py-20 px-6 bg-secondary">
-        <div className="container mx-auto max-w-2xl">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Бесплатная консультация</h2>
-            <p className="text-muted-foreground text-lg">
-              Оставьте заявку, и мы свяжемся с вами в течение 15 минут
-            </p>
-          </div>
-          <Card className="shadow-xl">
-            <CardContent className="pt-6">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label className="block text-sm font-semibold mb-2">Ваше имя</label>
-                  <Input 
-                    placeholder="Иван Иванов"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    required
-                    className="text-base"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold mb-2">Телефон</label>
-                  <Input 
-                    type="tel"
-                    placeholder="+7 (999) 123-45-67"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    required
-                    className="text-base"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold mb-2">Сообщение (необязательно)</label>
-                  <Textarea 
-                    placeholder="Опишите ваши пожелания..."
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    rows={4}
-                    className="text-base"
-                  />
-                </div>
-                <Button type="submit" className="w-full text-lg py-6" size="lg">
-                  <Icon name="Send" size={20} className="mr-2" />
-                  Отправить заявку
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
         </div>
       </section>
 
