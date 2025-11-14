@@ -240,8 +240,8 @@ const Index = () => {
                 <Icon name="Phone" size={28} className="text-accent-foreground" />
               </div>
               <h3 className="font-semibold text-xl mb-2">Телефон</h3>
-              <a href="tel:+74951234567" className="text-lg hover:text-accent transition-colors">
-                +7 (495) 123-45-67
+              <a href="tel:+79255883556" className="text-lg hover:text-accent transition-colors">
+                +7 925-588-3556
               </a>
             </div>
             <div className="flex flex-col items-center">
@@ -249,8 +249,8 @@ const Index = () => {
                 <Icon name="Mail" size={28} className="text-accent-foreground" />
               </div>
               <h3 className="font-semibold text-xl mb-2">Email</h3>
-              <a href="mailto:info@tsikhovsky.ru" className="text-lg hover:text-accent transition-colors">
-                info@tsikhovsky.ru
+              <a href="mailto:vsem.kvartiru.msk@mail.ru" className="text-lg hover:text-accent transition-colors">
+                vsem.kvartiru.msk@mail.ru
               </a>
             </div>
             <div className="flex flex-col items-center">
