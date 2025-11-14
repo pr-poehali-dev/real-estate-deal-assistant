@@ -59,10 +59,27 @@ const Index = () => {
     }
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert('Спасибо! Мы свяжемся с вами в ближайшее время.');
-    setFormData({ name: '', phone: '', message: '' });
+    
+    try {
+      const response = await fetch('https://functions.poehali.dev/929a17e7-b7c8-483e-aa40-a24482dd249c', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      if (response.ok) {
+        alert('Спасибо! Мы свяжемся с вами в ближайшее время.');
+        setFormData({ name: '', phone: '', message: '' });
+      } else {
+        alert('Произошла ошибка. Попробуйте позже или позвоните нам.');
+      }
+    } catch (error) {
+      alert('Произошла ошибка. Попробуйте позже или позвоните нам.');
+    }
   };
 
   return (
