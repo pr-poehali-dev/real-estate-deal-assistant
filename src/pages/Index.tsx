@@ -56,6 +56,41 @@ const Index = () => {
       location: 'Москва, СЗАО',
       area: '42 м²',
       price: '9 200 000 ₽'
+    },
+    {
+      image: 'https://cdn.poehali.dev/projects/fabe6b49-2111-49fa-bcdd-4c302569a9e3/files/faec3bae-cc8b-4254-8c76-6d9e30c7dd8b.jpg',
+      title: '2-комнатная квартира',
+      location: 'Москва, САО, ЖК "Северная звезда"',
+      area: '72 м²',
+      price: '16 900 000 ₽'
+    },
+    {
+      image: 'https://cdn.poehali.dev/projects/fabe6b49-2111-49fa-bcdd-4c302569a9e3/files/d6d02749-c1a1-408c-8083-f5ef1d739a40.jpg',
+      title: '1-комнатная квартира',
+      location: 'Москва, ЗАО, ЖК "Город на реке"',
+      area: '48 м²',
+      price: '11 200 000 ₽'
+    },
+    {
+      image: 'https://cdn.poehali.dev/projects/fabe6b49-2111-49fa-bcdd-4c302569a9e3/files/23784614-e2df-4b0c-841a-648bb20b768b.jpg',
+      title: '3-комнатная квартира',
+      location: 'Москва, СВАО, ЖК "Лесной квартал"',
+      area: '89 м²',
+      price: '22 400 000 ₽'
+    },
+    {
+      image: 'https://cdn.poehali.dev/projects/fabe6b49-2111-49fa-bcdd-4c302569a9e3/files/47e2b7cf-0568-466f-854d-d9f355e15e10.jpg',
+      title: '4-комнатная квартира',
+      location: 'Москва, ЦАО, ЖК "Пресня Сити"',
+      area: '128 м²',
+      price: '45 800 000 ₽'
+    },
+    {
+      image: 'https://cdn.poehali.dev/projects/fabe6b49-2111-49fa-bcdd-4c302569a9e3/files/1d9f0dad-a193-42ec-bfaa-40fe7e2c6eaa.jpg',
+      title: 'Студия',
+      location: 'Москва, ВАО, ЖК "Новая Москва"',
+      area: '35 м²',
+      price: '7 600 000 ₽'
     }
   ];
 
